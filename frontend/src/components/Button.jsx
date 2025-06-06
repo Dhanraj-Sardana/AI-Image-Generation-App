@@ -1,4 +1,4 @@
-export default function Button({ text, handleButton }) {
+export default function Button({ text, handleButton,icon=""}) {
   return (
     <button
       onClick={handleButton}
@@ -8,7 +8,7 @@ export default function Button({ text, handleButton }) {
                  hover:shadow-[0_0_20px_rgba(0,255,255,0.7)]
                  transition-all duration-300"
     >
-      {text}
+      {icon}{text}
     </button>
   );
 }

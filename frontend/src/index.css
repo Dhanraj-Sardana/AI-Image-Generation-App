@@ -4,3 +4,7 @@ html, body {
   padding: 0;
   background-color: #1f1f1f;
 }
+#root{
+  margin: 0;
+  padding: 0;
+}

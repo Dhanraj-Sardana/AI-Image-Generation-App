@@ -12,12 +12,14 @@ setTimeout(()=>setLoading(false),2000)
 const [Loading,setLoading]=useState(true);
   return (
     <>
-      <NavBar/>
-    <Routes>
-      <Route index element={Loading?<Index/>:<Home/>}/>
-      <Route path='/post' element={<Post/>}/>
-    </Routes>
-    </>
+      <NavBar />
+      
+        <Routes>
+          <Route index element={Loading ? <Index /> : <Home />} />
+          <Route path="/post" element={<Post />} />
+        </Routes>
+     </>
+    
   )
 }
 
