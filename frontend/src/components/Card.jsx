@@ -10,8 +10,8 @@ export default function Card({item}) {
                 <p>{item?.prompt}</p>
                 <div className="flex items-center justify-between w-full ">
                     <div  className="flex items-center gap-2">
-                        <h2>{item?.author}</h2>
-                        <Avatar>{item?.author[0]}</Avatar>
+                        <h2>{item?.name}</h2>
+                        <Avatar>{item?.name[0]}</Avatar>
                     </div>
                     <DownloadRoundedIcon onClick={()=>FileSaver.saveAs(item?.photo,"download.jpeg")} />
 

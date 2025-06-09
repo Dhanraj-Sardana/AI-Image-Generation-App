@@ -6,7 +6,7 @@ export default function Post() {
   const [generateImageLoading,setGenerateImageLoading]=useState(false);
   const [createPostLoading,setCreatePostLoading]=useState(false);
   const [post,setPost]=useState({
-    author:"",
+    name:"",
     prompt:"",
     photo:""
   });
@@ -17,14 +17,14 @@ export default function Post() {
     </div>
     <div className="flex gap-10   justify-center  ">
       
-      <GenerateImageForm post={Post} 
+      <GenerateImageForm post={post} 
       setPost={setPost}
       createPostLoading={createPostLoading}
       setCreatePostLoading={setCreatePostLoading}
       generateImageLoading={generateImageLoading}
       setGenerateImageLoading={setGenerateImageLoading} />
       
-      <GeneratedImageCard loading={generateImageLoading} src={post?.photo}/>
+      <GeneratedImageCard loading={generateImageLoading} src={post?.photo} createPostLoading={createPostLoading}/>
     </div>
   </>
   )
