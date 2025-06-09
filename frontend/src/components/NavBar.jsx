@@ -11,6 +11,9 @@ export default function NavBar() {
   }
    
   };
+  const handleExplore=()=>{
+    navigate('/')
+   }
 useEffect(() => {
     console.log("LOCATION CHANGED:", location.pathname);
   }, []);
@@ -21,7 +24,7 @@ useEffect(() => {
         <img src="/favicon.png" alt="logo image" className="h-12 w-12" />
         <span className="text-teal-300 text-xl font-bold tracking-wide">GENIVIS</span>
       </div>
-     { location?.pathname==='/'? <Button text="Create a Post" handleButton={handlePost} /> : <Button text='Explore Post'/>}
+     { location?.pathname==='/'? <Button text="Create a Post" handleButton={handlePost} /> : <Button text='Explore Post' handleButton={handleExplore}/>}
     </nav>
   );
 }
