@@ -1,6 +1,5 @@
 import express from 'express';
 import { home } from '../controllers/home.js';
-import { allPost } from '../controllers/allpost.js';
 import { createPost } from '../controllers/createPost.js';
 
 const router = express.Router();
