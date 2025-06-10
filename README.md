@@ -1,5 +1,5 @@
-### Genivis 
-# MERN Application that uses multiple api to generate AI images with prompt and host images on the cloud you can download the generated image on your local system
+# Genivis 
+### MERN Application that uses multiple api to generate AI images with prompt and host images on the cloud you can download the generated image on your local system
 
 ##  Folder Structure
 
